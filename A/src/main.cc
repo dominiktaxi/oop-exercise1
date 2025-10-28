@@ -1,13 +1,15 @@
-#include "position.h"
+#include "Sensor.h"
+#include "logger.h"
+#include "sensor-reading.h"
+
+void foo() {
+  Sensor s("TemperatureSensor");
+  Logger l;
+  SensorReading sr = s.read();
+  l.log(sr, s.name());
+}
 
 int main() {
-  Position p;
-
-  p.print();
-
-  p.move(1.0, 15.0);
-
-  p.print();
-
+  foo();
   return 0;
 }
