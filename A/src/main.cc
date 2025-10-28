@@ -1,6 +1,15 @@
 #include <iostream>
 
+#include "position.h"
+
 int main() {
-  std::cout << "Hello, world!" << std::endl;
+  Position p;
+
+  p.print();
+
+  p.move(1.0, 15.0);
+
+  p.print();
+
   return 0;
 }
