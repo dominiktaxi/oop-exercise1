@@ -2,13 +2,12 @@
 #include <string>
 
 Car::Car(const std::string &regNumber, const std::string &arrivalTime)
-    : regNumber(regNumber), arrivalTime(arrivalTime) {}
+    : _regNumber(regNumber), _arrivalTime(arrivalTime) {}
 
-const std::string Car::getRegNumber() { return this->regNumber; }
-
-const std::string Car::getArrivaltime() { return this->arrivalTime; }
+std::string Car::regNumber() { return this->_regNumber; }
+std::string Car::arrivalTime() { return this->_arrivalTime; }
 
 void Car::print() const {
-  std::cout << "Car with regNumber: " << this->regNumber << " arrived at "
-            << this->arrivalTime << std::endl;
+  std::cout << "Car with regNumber: " << this->_regNumber << " arrived at "
+            << this->_arrivalTime << std::endl;
 }
