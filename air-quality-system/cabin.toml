@@ -1,0 +1,5 @@
+[package]
+name = "air-quality-system"
+version = "0.1.0"
+authors = ["Daniel Shamany <dshamany@proton.me>"]
+edition = "20"
