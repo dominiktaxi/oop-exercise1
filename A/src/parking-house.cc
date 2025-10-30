@@ -13,7 +13,6 @@ bool ParkingHouse::removeCar( const std::string& regNumber )
         if( _cars[i].regNumber == regNumber )
         {
             _cars.erase( _cars.begin() + i );
-            _cars.pop_back();
             return true;
             break;
         }
