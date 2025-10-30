@@ -1,8 +1,8 @@
 #include "position.h"
 
 void Position::move(double dx, double dy) {
-  this->x = dx;
-  this->y = dy;
+  this->x += dx;
+  this->y += dy;
 }
 
 void Position::print() {
