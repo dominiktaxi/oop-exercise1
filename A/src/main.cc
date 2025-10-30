@@ -8,7 +8,7 @@ void foo() {
   SensorReading sr = s.read();
   l.log(sr, s.name());
 }
-
+//branch out
 int main() {
   foo();
   return 0;
