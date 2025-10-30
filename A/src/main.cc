@@ -10,7 +10,7 @@ void foo() {
   SensorReading sr = s.read();
   l.log(sr, s.name());
 
-  Car car("MJA234", "12/12/12");
+  Car car("MJA234", "12/13/12");
   ParkingHouse parkingHouse;
   parkingHouse.addCar(car);
   parkingHouse.printStatus();

@@ -4,12 +4,12 @@
 
 class Car {
 private:
-  std::string regNumber;
-  std::string arrivalTime;
+  std::string _regNumber;
+  std::string _arrivalTime;
 
 public:
   Car(const std::string &, const std::string &);
-  const std::string getRegNumber();
-  const std::string getArrivaltime();
+  std::string regNumber();
+  std::string arrivalTime();
   void print() const;
 };
