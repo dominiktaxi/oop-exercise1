@@ -5,6 +5,6 @@ void Position::move(double dx, double dy) {
   this->y += dy;
 }
 
-void Position::print() {
+void Position::print() const {
   std::cout << "(" << x << ", " << y << ")" << std::endl;
 }
