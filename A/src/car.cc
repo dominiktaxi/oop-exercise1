@@ -1,4 +1,5 @@
 #include "car.h"
+#include <string>
 
 Car::Car(const std::string &regNumber, const std::string &arrivalTime)
     : regNumber(regNumber), arrivalTime(arrivalTime) {}
