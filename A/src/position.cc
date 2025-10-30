@@ -1,10 +1,10 @@
 #include "position.h"
 
 void Position::move(double dx, double dy) {
-  this->x = dx;
-  this->y = dy;
+  this->x += dx;
+  this->y += dy;
 }
 
-void Position::print() {
+void Position::print() const {
   std::cout << "(" << x << ", " << y << ")" << std::endl;
 }

@@ -7,5 +7,5 @@ struct Position {
   double y = 0;
 
   void move(double dx, double dy);
-  void print();
+  void print() const;
 };
