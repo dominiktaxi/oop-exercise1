@@ -1,10 +1,9 @@
 #pragma once
 #include <iostream>
-struct Car
-{
-    Car( const std::string&, const std::string& );
+struct Car {
+  const std::string regNumber;
+  const std::string arrivalTime;
 
-    const std::string regNumber;
-    const std::string arrivalTime;
-    void print() const;
+  Car(const std::string &, const std::string &);
+  void print() const;
 };
