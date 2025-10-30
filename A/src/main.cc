@@ -1,8 +1,8 @@
-#include "Sensor.h"
 #include "car.h"
 #include "logger.h"
 #include "parking-house.h"
 #include "sensor-reading.h"
+#include "sensor.h"
 
 void foo() {
   Sensor s("TemperatureSensor");

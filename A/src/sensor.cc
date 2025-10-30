@@ -1,4 +1,4 @@
-#include "Sensor.h"
+#include "sensor.h"
 
 Sensor::Sensor(const std::string &name) : _name(name) {}
 

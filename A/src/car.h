@@ -2,10 +2,14 @@
 #include <iostream>
 #include <string>
 
-struct Car {
+class Car {
+private:
   std::string regNumber;
   std::string arrivalTime;
 
+public:
   Car(const std::string &, const std::string &);
+  const std::string getRegNumber();
+  const std::string getArrivaltime();
   void print() const;
 };

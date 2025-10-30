@@ -1,29 +1,23 @@
 #include "parking-house.h"
+#include <algorithm>
 #include <utility>
 
-void ParkingHouse::addCar( const Car& car )
-{
-    _cars.push_back( car );
+void ParkingHouse::addCar(const Car &car) { _cars.push_back(car); }
+
+bool ParkingHouse::removeCar(const std::string &regNumber) {
+  for (int i = 0; i < _cars.size(); i++) {
+    if (_cars[i].getRegNumber() == regNumber) {
+      _cars.erase(_cars.begin() + i);
+      return true;
+      break;
+    }
+  }
+  return false;
 }
 
-bool ParkingHouse::removeCar( const std::string& regNumber )
-{
-    for ( int i = 0; i < _cars.size(); i++ )
-    {
-        if( _cars[i].regNumber == regNumber )
-        {
-            _cars.erase( _cars.begin() + i );
-            return true;
-            break;
-        }
-    }
-    return false;
-}
-
-void ParkingHouse::printStatus() const
-{
-    for( const auto& car : _cars )
-    {   
-         std::cout << "Parked car: " << car.regNumber << " arrived at " << car.arrivalTime << std::endl;
-    }
+void ParkingHouse::printStatus() const {
+  for (Car car : _cars) {
+    std::cout << "Parked car: " << car.getRegNumber() << " arrived at "
+              << car.getArrivaltime() << std::endl;
+  }
 }
